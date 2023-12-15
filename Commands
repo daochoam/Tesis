@@ -1,0 +1,17 @@
+comandos:
+sudo xhost +local:docker
+
+ver las propiedades asignadas al contenedor
+docker inspect ros-noetic
+
+
+docker images -a
+docker container ls -a
+docker exec -it ros-noetic /bin/bash
+code . --no-sandbox --user-data-dir
+
+apc_abb_interface irb140_connection.launch
+
+apc_irb140 moveit_interface
+irb140_commander
+
